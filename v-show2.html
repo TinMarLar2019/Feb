@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<h3 v-show="hasTask">I've some tasks tonight</h3>
+		<button @click="Done" v-show="hasTask">Done All Tasks</button>
+		<h3 v-show="!hasTask">I've done my tasks!</h3>
+	</div>
+</body>
+<script>
+	new Vue({
+		el:'#app',
+		data:{
+			hasTask : true
+		},
+		methods:{
+			Done:function(){
+				this.hasTask = false;
+				alert('Done All Tasks');
+			}
+		}
+	});
+</script>
+</html>
+<div id="app">
+	
+</div>
+<script>
+	new Vue({
+		el:'#app',
+		data:{
+			hasTask : true
+		},
+		methods:{
+			Done:function(){
+				this.hasTask = false;
+				alert('Done All Task')
+			}
+		}
+	});
+</script>

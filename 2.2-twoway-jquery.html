@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+	<h3>Hello</h3>
+	<input type="text" id="myInput">
+</body>
+<script>
+	$(document).ready(function(){
+		$('#myInput').on('keyup',function(){
+			var input = $(this).val();
+			$('h3').text(input);
+		});
+	});
+	
+</script>
+</html>
